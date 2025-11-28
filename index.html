@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de senha</title>
+</head>
+
+<body>
+    <main class="main-conteiner">
+        <h1>Gere sua senha aqui</h1>
+        <p>Selecione os requisitos que preferir:</p>
+        <form id="passwordForm">
+            <label><input type="checkbox" id="include-uppercase" checked> Letras Maiúsculas</label>
+            <label><input type="checkbox" id="include-lowercase" checked> Letras Minúsculas</label>
+            <label><input type="checkbox" id="include-number" checked> Números</label>
+            <label><input type="checkbox" id="include-especial-caracter" checked> Símbolos</label>
+        </form>
+        <label for="">Escreva a quantidade de caracteres da senha:</label>
+        <input type="number" placeholder="12">
+        <p class="password-local"><strong>Sua nova senha é: </strong><span id="password"></span></p>
+        <div class="verify-password">
+            <div id="porcentage-force"></div>
+        </div>
+        <button onclick="createPassword()">Clique para gerar</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

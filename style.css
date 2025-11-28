@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e2e2e2;
+    font-family:"Zalando Sans SemiExpanded", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.main-conteiner {
+    width:  30rem;
+    min-height: 23rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-sizing: border-box;
+    box-shadow:  0px 4px 40px -1px rgba(0, 0, 0, 0.24);;
+}
+
+.main-conteiner h1 {
+    text-align: center;
+    color: #479e31;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.password-local {
+    background-color: #e2e2e2;
+    padding: 0.6rem 0.6rem;
+    border-radius: 0.8rem;
+    word-wrap: break-word;
+}
+
+.verify-password {
+    background-color:#e2e2e2;
+    height: .4rem;
+    border-radius: .2rem;
+    overflow: hidden;
+}
+
+#porcentage-force {
+    background-color: #3b8129;
+    width: 0%;
+    height: .4rem;
+    border-radius: .2rem;
+}
+
+input {
+    border: 1px solid #479e31;
+    border-radius: .4rem;
+    padding: .6rem;
+    
+}
+
+button {
+    background-color: #479e31;
+    border: none;
+    max-width: 15rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+button:hover {
+    background-color: #3b8129;
+}
+
+#btn-copy-password {
+    font-size: 0.8rem;
+    font-weight: 0;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    background-color: #3b8129;
+}
